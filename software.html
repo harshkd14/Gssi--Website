@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gurudev Software - Professional Software Training for Students and Working Professionals">
+    <meta name="keywords" content="software training, Python courses, AI ML training, web development, data analytics, IoT courses">
+    <meta name="author" content="Gurudev Software">
+    <title>Software Training | Gurudev Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Gurudev Software</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="robotics.html" class="nav-link">Robotics</a>
+                </li>
+                <li class="nav-item">
+                    <a href="software.html" class="nav-link active">Software Training</a>
+                </li>
+                <li class="nav-item">
+                    <a href="banking.html" class="nav-link">Outsourcing Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background: linear-gradient(135deg, rgba(0, 120, 255, 0.9) 0%, rgba(0, 61, 130, 0.85) 100%), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1920') center/cover;">
+        <div class="container">
+            <h1 class="hero-title">Upskill for Tomorrow's Tech</h1>
+            <p class="hero-subtitle">Industry-relevant training programs designed to accelerate your career in technology</p>
+            <div class="cta-buttons">
+                <button class="cta-button" onclick="scrollToSection('courses')">Browse Courses</button>
+                <button class="cta-button secondary" onclick="scrollToSection('enrollment')">Enroll Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About This Service -->
+    <section id="about-service" class="section" style="background: var(--white); padding: var(--section-padding);">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div style="max-width: 900px; margin: 0 auto; text-align: left;">
+                <p style="font-size: 1.2em; margin-bottom: 20px;"><strong>🎓 25+ Years of Excellence!</strong> Gurudev Software delivers industry-leading training programs with expert instruction and cutting-edge curriculum.</p>
+                <p style="font-size: 1.2em; margin-bottom: 20px;"><strong>🚀 Theory & Practice!</strong> Alternate-day learning model with theory sessions and hands-on practical classes. State-of-the-art labs with modern infrastructure and latest software.</p>
+                <p style="font-size: 1.2em; margin-bottom: 20px;"><strong>👨‍🏫 Experienced Faculty!</strong> Learn from qualified instructors with real-world expertise. Personalized attention and mentorship for your success!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Categories -->
+    <section id="courses" class="section" style="background: var(--light-gray); padding: var(--section-padding);">
+        <div class="container">
+            <h2 class="section-title">Courses Offered</h2>
+            <p class="section-subtitle">Comprehensive training programs for students and professionals</p>
+
+            <div class="verticals-grid">
+                <div class="vertical-card">
+                    <div class="vertical-icon">💼</div>
+                    <h3>MS Office</h3>
+                    <p>Master Word, Excel, PowerPoint, and Outlook. Learn document formatting, advanced formulas, data analysis, and professional presentations. Perfect for office professionals and students.</p>
+                </div>
+
+                <div class="vertical-card">
+                    <div class="vertical-icon">⚙️</div>
+                    <h3>C / C++</h3>
+                    <p>Build strong programming foundations with C and C++. Learn data structures, algorithms, OOP, and memory management. Ideal for computer science students and technical interviews.</p>
+                </div>
+
+                <div class="vertical-card">
+                    <div class="vertical-icon">🐍</div>
+                    <h3>Python</h3>
+                    <p>Learn Python for web development, data science, AI/ML, and automation. Cover fundamentals, libraries like NumPy and Pandas, and real-world applications. Suitable for all levels.</p>
+                </div>
+
+                <div class="vertical-card">
+                    <div class="vertical-icon">📊</div>
+                    <h3>Tally</h3>
+                    <p>Master Tally ERP 9 and Tally Prime for accounting and business management. Learn GST compliance, inventory, financial reporting, and payroll. Essential for accountants and business owners.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Training -->
+    <section id="why-training" class="section" style="background: var(--white); padding: var(--section-padding);">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Training Programs</h2>
+            <p class="section-subtitle">Learn from the best with hands-on, industry-focused education</p>
+            
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">👨‍🏫</div>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from professionals with 10+ years of industry experience in top tech companies.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">💼</div>
+                    <h3>Hands-On Projects</h3>
+                    <p>Build real-world projects that you can showcase in your portfolio to employers.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🎓</div>
+                    <h3>Industry Certifications</h3>
+                    <p>Earn recognized certifications that boost your resume and career prospects.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">⏰</div>
+                    <h3>Flexible Schedules</h3>
+                    <p>Weekend and evening batches available for working professionals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section id="training-stats" class="impact-section">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Our Training Impact</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Transforming careers through quality education</p>
+
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <div class="impact-number" data-target="10000">0</div>
+                    <div class="impact-label">Students Trained</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-number" data-target="25">0</div>
+                    <div class="impact-label">Years of Excellence</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-number" data-target="4">0</div>
+                    <div class="impact-label">Courses Offered</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-number" data-target="5">0</div>
+                    <div class="impact-label">Average Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+     <!--
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Student Success Stories</h2>
+            <p class="section-subtitle">Hear from students who transformed their careers</p>
+            
+            <div class="testimonials-carousel">
+                <div class="testimonial-card active">
+                    <p class="testimonial-text">"The Python and AI course gave me the skills I needed to transition from a non-tech background to a data scientist role at a Fortune 500 company."</p>
+                    <div class="testimonial-author">Rahul Mehta</div>
+                    <div class="testimonial-role">Data Scientist, Tech Corp</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Excellent hands-on training with real projects. The instructors were patient and knowledgeable. Highly recommend for anyone looking to upskill!"</p>
+                    <div class="testimonial-author">Priya Sharma</div>
+                    <div class="testimonial-role">Full Stack Developer, Startup Inc</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Best investment in my career. The flexible schedule allowed me to upskill while working full-time. Highly recommended!"</p>
+                    <div class="testimonial-author">Amit Patel</div>
+                    <div class="testimonial-role">Cloud Engineer, Enterprise Solutions</div>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <span class="carousel-dot active" data-slide="0"></span>
+                <span class="carousel-dot" data-slide="1"></span>
+                <span class="carousel-dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- Enrollment Form -->
+    <section id="enrollment" class="section" style="background: var(--light-gray); padding: var(--section-padding);">
+        <div class="container">
+            <h2 class="section-title">Enroll Now</h2>
+            <p class="section-subtitle">Start your learning journey today</p>
+            
+            <div style="max-width: 800px; margin: 40px auto;">
+                <div style="padding: 0; background: transparent;">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdc5d5C8KDJnTZnOmeix0nQ4N95chiLxUZ2Im5yOSZomzqF7w/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Gurudev Software</h3>
+                    <p>Empowering innovation across Education, Technology, and Enterprise.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="robotics.html">Robotics</a></li>
+                        <li><a href="software.html">Software Training</a></li>
+                        <li><a href="banking.html">Banking Solutions</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> gssicud@gmail.com</p>
+                    <p><i class="fas fa-phone-alt"></i> +91 9655058068</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Cuddalore, Tamil Nadu</p>
+                    <p><i class="fab fa-instagram"></i> @gurudev.software</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gurudev Software. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Simple scroll function
+        function scrollToSection(sectionId) {
+            console.log('scrollToSection called with:', sectionId);
+            const element = document.getElementById(sectionId);
+            console.log('Found element:', element);
+
+            if (element) {
+                const navbar = document.querySelector('.navbar');
+                const navbarHeight = navbar ? navbar.offsetHeight : 80;
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - navbarHeight - 20;
+
+                console.log('Scrolling to position:', offsetPosition);
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.error('Element not found:', sectionId);
+            }
+        }
+    </script>
+</body>
+</html>
+

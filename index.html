@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurudev Software | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="home-style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Gurudev Software</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="robotics.html" class="nav-link">Robotics</a>
+                </li>
+                <li class="nav-item">
+                    <a href="software.html" class="nav-link">Software Training</a>
+                </li>
+                <li class="nav-item">
+                    <a href="banking.html" class="nav-link">Outsourcing Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <video autoplay muted loop class="background-video">
+            <source src="https://cdn.coverr.co/videos/coverr-golden-sunset-over-the-ocean-7436/1080p.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Gurudev Software</h1>
+            <p class="hero-subtitle">Transforming Education Through Robotics, Software Training & Outsourcing Solutions</p>
+            <button class="cta-button" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">Discover More</button>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Empowering Innovation Through Technology</h3>
+                    <p>Gurudev Software is a leading technology solutions provider based in Cuddalore, Tamil Nadu. We specialize in robotics training, software development education, and comprehensive outsourcing services. Our mission is to bridge the gap between traditional education and industry requirements by providing hands-on, practical training that prepares students and professionals for the future of technology.</p>
+                    <p>With a team of experienced instructors and industry experts, we deliver cutting-edge training programs in robotics, software development, and provide reliable outsourcing solutions for businesses. Our state-of-the-art facility at Durai Plaza is equipped with modern labs and resources to ensure the best learning experience for our students.</p>
+                    <a href="about.html" class="service-cta" style="display: inline-block; margin-top: 20px;">Learn More →</a>
+                </div>
+                <div class="about-image">
+                    <img src="gssi-logo.png" alt="GSSI - Gurudev Software Logo" style="width: 100%; max-width: 500px; height: auto; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section - Stripe Style -->
+    <section id="services" class="services-section">
+        <h2 class="section-title">Our Services</h2>
+    
+
+        <!-- Stripe-style Scroll Container -->
+        <div class="services-scroll-container">
+
+                <!-- Left Side: Scrolling Service Descriptions -->
+                <div class="services-scroll-content">
+
+                    <!-- Service 1: Software Training -->
+                    <div class="service-item" data-service="service-1">
+                        <div class="service-item-content">
+                            <div class="service-icon-large">💻</div>
+                            <h3 class="service-title">Software Training</h3>
+                            <p class="service-description">Empower your team with cutting-edge software skills. Our comprehensive training programs cover the latest technologies and industry best practices to boost productivity and innovation.</p>
+                            <ul class="service-features">
+                                <li>Hands-on Practical Training</li>
+                                <li>Industry Expert Instructors</li>
+                                <li>Customized Learning Paths</li>
+                                <li>Certification Programs</li>
+                            </ul>
+                            <a href="software.html" class="service-cta">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Outsourcing Services -->
+                    <div class="service-item" data-service="service-2">
+                        <div class="service-item-content">
+                            <div class="service-icon-large">🌐</div>
+                            <h3 class="service-title">Outsourcing Services</h3>
+                            <p class="service-description">Scale your business efficiently with our professional outsourcing solutions. Access skilled talent, reduce costs, and focus on your core business while we handle the rest.</p>
+                            <ul class="service-features">
+                                <li>Data Entry & Processing</li>
+                                <li>Back-Office Operations</li>
+                                <li>Quality Assurance</li>
+                                <li>Cost-Effective Solutions</li>
+                            </ul>
+                            <a href="banking.html" class="service-cta">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Robotics -->
+                    <div class="service-item" data-service="service-3">
+                        <div class="service-item-content">
+                            <div class="service-icon-large">🤖</div>
+                            <h3 class="service-title">Robotics for Schools</h3>
+                            <p class="service-description">Empowering students with hands-on robotics education. Learn to code, innovate, and deploy real-world solutions through automation and problem-solving.</p>
+                            <ul class="service-features">
+                                <li>Coding & Programming</li>
+                                <li>Innovation & Design</li>
+                                <li>Automation Projects</li>
+                                <li>Real-Life Problem Solving</li>
+                            </ul>
+                            <a href="robotics.html" class="service-cta">Learn More →</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Side: Sticky Visual Content with Flip Cards -->
+                <div class="services-sticky-visual">
+                    <div class="sticky-visual-container">
+
+                        <!-- Visual for Service 1: Software Training -->
+                        <div class="visual-item active" data-visual="service-1">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <!-- Front Side -->
+                                    <div class="flip-card-front">
+                                        <div class="visual-gradient gradient-1"></div>
+                                        <div class="visual-icon">💻</div>
+                                        <h3>Software Training</h3>
+                                        <p>Learn. Grow. Excel.</p>
+                                    </div>
+                                    <!-- Back Side -->
+                                    <div class="flip-card-back">
+                                        <div class="visual-gradient gradient-1"></div>
+                                        <h3>Training Programs</h3>
+                                        <ul class="flip-features">
+                                            <li>✓ Expert Instructors</li>
+                                            <li>✓ Hands-on Learning</li>
+                                            <li>✓ Certifications</li>
+                                            <li>✓ Career Support</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Visual for Service 2: Outsourcing Services -->
+                        <div class="visual-item" data-visual="service-2">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <!-- Front Side -->
+                                    <div class="flip-card-front">
+                                        <div class="visual-gradient gradient-2"></div>
+                                        <div class="visual-icon">🌐</div>
+                                        <h3>Outsourcing Services</h3>
+                                        <p>Scale. Optimize. Succeed.</p>
+                                    </div>
+                                    <!-- Back Side -->
+                                    <div class="flip-card-back">
+                                        <div class="visual-gradient gradient-2"></div>
+                                        <h3>Outsourcing Solutions</h3>
+                                        <ul class="flip-features">
+                                            <li>✓ Data Processing</li>
+                                            <li>✓ Cost Effective</li>
+                                            <li>✓ 24/7 Support</li>
+                                            <li>✓ Quality Assured</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Visual for Service 3: Robotics -->
+                        <div class="visual-item" data-visual="service-3">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <!-- Front Side -->
+                                    <div class="flip-card-front">
+                                        <div class="visual-gradient gradient-3"></div>
+                                        <div class="visual-icon">🤖</div>
+                                        <h3>Robotics for Schools</h3>
+                                        <p>Code. Innovate. Deploy.</p>
+                                    </div>
+                                    <!-- Back Side -->
+                                    <div class="flip-card-back">
+                                        <div class="visual-gradient gradient-3"></div>
+                                        <h3>Hands-On Learning</h3>
+                                        <ul class="flip-features">
+                                            <li>✓ Learn Coding</li>
+                                            <li>✓ Innovation</li>
+                                            <li>✓ Automation</li>
+                                            <li>✓ Problem Solving</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+     <!--
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <p style="text-align: center; font-size: 1.2em; color: #666; margin-bottom: 40px;">Explore our work and achievements</p>
+            <div style="text-align: center; padding: 60px 20px;">
+                <p style="font-size: 1.1em; color: #888;">Visit our <a href="gallery.html" style="color: #0056b3; text-decoration: none; font-weight: 600;">Gallery Page</a> to see our complete portfolio</p>
+            </div>
+        </div>
+    </section>
+-->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="info-item">
+                        <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <p>91, Lawrence Road, 3rd Floor<br>Durai Plaza, Cuddalore-607002</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon"><i class="fas fa-envelope"></i></span>
+                        <p>gssicud@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon"><i class="fas fa-phone-alt"></i></span>
+                        <p>+91 9655058068</p>
+                    </div>
+                </div>
+                <div class="contact-form" style="padding: 0; background: transparent; box-shadow: none;">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdbK-zzT7gAVetivrtWCHcR9_IHAilnPg0ggfxJ2i9MwKYRJw/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Gurudev Software. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="home-script.js"></script>
+</body>
+</html>
+
+
