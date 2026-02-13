@@ -3,16 +3,16 @@
 
 /* CSS Variables */
 :root {
-    --primary-blue: #0078FF;
-    --accent-orange: #FF6B00;
+    --primary-blue: #FFD700;
+    --accent-orange: #FFA500;
     --white: #FFFFFF;
     --graphite: #222222;
     --light-gray: #F5F5F5;
     --medium-gray: #888888;
     --dark-gray: #444444;
-    --gradient-primary: linear-gradient(135deg, #0078FF 0%, #0056CC 100%);
-    --gradient-accent: linear-gradient(135deg, #FF6B00 0%, #FF8533 100%);
-    --gradient-hero: linear-gradient(135deg, rgba(0, 120, 255, 0.9) 0%, rgba(0, 61, 130, 0.85) 100%);
+    --gradient-primary: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    --gradient-accent: linear-gradient(135deg, #FFA500 0%, #FF8C00 100%);
+    --gradient-hero: linear-gradient(135deg, rgba(255, 215, 0, 0.9) 0%, rgba(255, 165, 0, 0.85) 100%);
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Montserrat', sans-serif;
     --section-padding: 100px 20px;
@@ -67,7 +67,7 @@ body {
 }
 
 .navbar.scrolled {
-    background: rgba(0, 120, 255, 0.95);
+    background: rgba(255, 215, 0, 0.95);
     backdrop-filter: blur(20px);
     box-shadow: var(--shadow-lg);
 }
@@ -88,7 +88,7 @@ body {
 }
 
 .logo h2 {
-    color: var(--white);
+    color: var(--graphite);
     font-family: var(--font-heading);
     font-size: 1.8rem;
     font-weight: 700;
@@ -100,7 +100,7 @@ body {
 
 .logo h2:hover {
     transform: scale(1.05);
-    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.4));
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
 }
 
 .nav-menu {
@@ -117,7 +117,7 @@ body {
 }
 
 .nav-link {
-    color: var(--white);
+    color: var(--graphite);
     text-decoration: none;
     font-family: var(--font-body);
     font-weight: 500;
@@ -131,11 +131,11 @@ body {
 }
 
 .nav-link:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .nav-link.active {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(0, 0, 0, 0.15);
     font-weight: 600;
 }
 
@@ -148,7 +148,7 @@ body {
 .bar {
     width: 25px;
     height: 3px;
-    background: white;
+    background: var(--graphite);
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -241,7 +241,7 @@ body {
 
 .cta-button {
     background: var(--gradient-accent);
-    color: var(--white);
+    color: var(--graphite);
     border: none;
     padding: 16px 40px;
     font-family: var(--font-body);
@@ -265,13 +265,13 @@ body {
 
 .cta-button.secondary {
     background: transparent;
-    border: 2px solid var(--white);
-    color: var(--white);
+    border: 2px solid var(--graphite);
+    color: var(--graphite);
 }
 
 .cta-button.secondary:hover {
-    background: var(--white);
-    color: var(--primary-blue);
+    background: var(--graphite);
+    color: var(--white);
 }
 
 /* About Section */
@@ -585,7 +585,7 @@ section {
 .service-title {
     font-size: 2.5em;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -594,8 +594,9 @@ section {
 .service-description {
     font-size: 1.2em;
     line-height: 1.8;
-    color: #ccc;
+    color: white;
     margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .service-features {
@@ -608,15 +609,16 @@ section {
     padding: 12px 0;
     padding-left: 30px;
     position: relative;
-    color: #fff;
+    color: white;
     font-size: 1.1em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .service-features li::before {
     content: '✓';
     position: absolute;
     left: 0;
-    color: #43e97b;
+    color: #FFD700;
     font-weight: bold;
     font-size: 1.2em;
 }
@@ -624,19 +626,19 @@ section {
 .service-cta {
     display: inline-block;
     padding: 15px 40px;
-    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-    color: #0a0a0a;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #222222;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
     font-size: 1.1em;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(67, 233, 123, 0.3);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
 }
 
 .service-cta:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(67, 233, 123, 0.5);
+    box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5);
 }
 
 /* Right Side: Fixed Visual */
@@ -801,7 +803,10 @@ section {
 .service-title {
     font-size: 2.5em;
     font-weight: 700;
-    color: #0056b3;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 20px;
     line-height: 1.2;
 }
@@ -809,8 +814,9 @@ section {
 .service-description {
     font-size: 1.2em;
     line-height: 1.8;
-    color: #555;
+    color: white;
     margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .service-features {
@@ -821,18 +827,19 @@ section {
 
 .service-features li {
     font-size: 1.1em;
-    color: #666;
+    color: white;
     padding: 12px 0;
     padding-left: 30px;
     position: relative;
     line-height: 1.6;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .service-features li:before {
     content: "✓";
     position: absolute;
     left: 0;
-    color: #0056b3;
+    color: #FFD700;
     font-weight: bold;
     font-size: 1.2em;
 }
@@ -841,15 +848,15 @@ section {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: linear-gradient(135deg, #ff6600 0%, #ff8533 100%);
-    color: white;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #222222;
     padding: 14px 32px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1em;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(255, 102, 0, 0.3);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
 }
 
 .service-cta:hover {
@@ -1671,7 +1678,7 @@ section {
 
 /* IMPACT COUNTER */
 .impact-section {
-    background: var(--gradient-primary);
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     color: var(--white);
     text-align: center;
 }
@@ -1779,7 +1786,7 @@ section {
 
 /* CTA SECTION */
 .cta-section {
-    background: var(--gradient-primary);
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     text-align: center;
 }
 
@@ -1845,7 +1852,7 @@ section {
         left: -100%;
         top: 80px;
         flex-direction: column;
-        background: var(--primary-blue);
+        background: var(--gradient-primary);
         width: 100%;
         text-align: center;
         transition: 0.3s;
